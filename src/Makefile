@@ -9,7 +9,7 @@ SDL_CFLAGS = $$(sdl-config --cflags)
 CFLAGS = $(ERROR_CFLAGS) $(DEBUG_CFLAGS) $(SDL_CFLAGS)
 SDL_LDFLAGS = $$(sdl-config --libs)
 #LDFLAGS = $(ERROR_CFLAGS) $(DEBUG_CFLAGS) $(SDL_LDFLAGS) -lSDL_ttf
-LDFLAGS = $(DEBUG_CFLAGS) $(SDL_LDFLAGS) -lSDL_ttf -lSDL_mixer -lSDL_image
+LDFLAGS = $(DEBUG_CFLAGS) $(SDL_LDFLAGS) -lSDL_ttf -lSDL_mixer -lSDL_image -lm -lz
 
 all: $(BIN)
 
